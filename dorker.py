@@ -1,19 +1,6 @@
-from googlesearch import search
-import sys
+import base64
 
-import pyfiglet as pyg  
 
-res= pyg.figlet_format("Ys jhonson le wana !!!!!" , font="banner3")
-print(res)
+eval(compile(base64.b64decode('ZnJvbSBnb29nbGVzZWFyY2ggaW1wb3J0IHNlYXJjaAppbXBvcnQgc3lzCgpmcm9tIHB5ZmlnbGV0IGltcG9ydCBGaWdsZXQKCmNsYXNzIGNvdWxldXI6CgkJICAJT0sgPSAnXDAzM1s5MW0nICNHUkVFTgoJCSAgCQoJCSAgCQkKCmZpZ2xldCA9IEZpZ2xldChmb250PSdzbGFudCcpCnJlc3VsdCA9IGZpZ2xldC5yZW5kZXJUZXh0KCJZcyBqaG9uc29uIikKZGFrPSBmaWdsZXQucmVuZGVyVGV4dCgiTGUgd2FuYSIpCnByaW50KGNvdWxldXIuT0srcmVzdWx0KQpwcmludChjb3VsZXVyLk9LK2RhaykKdHJ5IDoKCWEgPSBzeXMuYXJndlsxXQoJcXVlcnkgPSBhCglmb3IgZG9yayBpbiBzZWFyY2gocXVlcnksIHRsZD0iY28uaW4iLCBudW09MTAwLCBzdG9wPTEwMCwgcGF1c2U9Mik6CgkJICAJCWNsYXNzIGNvdWxldXI6CgkJICAJCQlPSyA9ICdcMDMzWzkybScgI0dSRUVOCgkJICAJCXByaW50KGNvdWxldXIuT0srZG9yaykKCgpleGNlcHQgOgoJY2xhc3MgY291bGV1cjoKCQlPSyA9ICdcMDMzWzkybScgI0dSRUVOCgkKCXByaW50KGNvdWxldXIuT0srJ3B5dGhvbiBkb3JrZXIucHkgdGFyZ2V0Jyk='),'<string>','exec'))
 
-try :
-	a = sys.argv[1]
-	query = a
-	for dork in search(query, tld="co.in", num=100, stop=100, pause=2):
-		  		class couleur:
-		  			OK = '\033[92m' #GREEN
-		  		print(couleur.OK+dork)
 
-except :
-	
-	print('python dorker.py target')
