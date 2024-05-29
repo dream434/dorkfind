@@ -1,7 +1,7 @@
 # dorker-google
 
 
-#Installation 📝
+# Installation 📝
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-#Usage 🚀
+# Usage 🚀
 
 
 
@@ -42,7 +42,7 @@ options:
 <img src="https://i.postimg.cc/FzbWBX6n/dorkfind.png" alt="Image description" width="470" height="290">
 
 
-#Features 💬
+# Features 💬
 
 
 It may have new possibilities or integration with other search engines in the future.
