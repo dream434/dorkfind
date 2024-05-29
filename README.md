@@ -1,24 +1,24 @@
 # dorker-google
 
+
 #Installation 📝
+
+
 
 <code>apt install python</code>
 
 <code>pip -r requirement.txt</code>
 
+
+
+
 #Usage 🚀
+
+
 
 <code>python3 DorkFind.py -h
 
-  ____             __   _______           __                                                                                                                      
-   / __ \____  _____/ /__/ ____(_)___  ____/ /                                                                                                                      
-  / / / / __ \/ ___/ //_/ /_  / / __ \/ __  /                                                                                                                       
- / /_/ / /_/ / /  / ,< / __/ / / / / / /_/ /                                                                                                                        
-/_____/\____/_/  /_/|_/_/   /_/_/ /_/\__,_/                                                                                                                         
-                                 v.0.1                                                                                                                              
-                                 Author :Jhonson                                                                                                                    
-                                 Email : wannaajhonson@gmail.com                                                                                                    
-                                                                                                                                                                    
+                                                                                                       
 usage: DorkFind.py [-h] -title TITLE -num NUM [-save SAVE]
 
 DorkFind
