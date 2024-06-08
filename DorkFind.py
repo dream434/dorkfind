@@ -1,11 +1,11 @@
-#!/bin/python3
+#!/bin/env python3
 
 from googlesearch import search
 from colorama import Fore, Style
 import argparse
 import requests
-
-
+import time
+import threading
 
 def arparse():
     banner='''
@@ -34,6 +34,7 @@ def main(title,num,save):
         for i in filter:
             if args.title in i:
                 print(Fore.BLUE +Style.BRIGHT +i+ Style.RESET_ALL)
+                time.sleep(2) 
                 if args.save:
                    with open(save, 'a') as file :
                      
@@ -46,6 +47,7 @@ def main(title,num,save):
         for i in filter:
            
             print(Fore.BLUE +Style.BRIGHT +i+ Style.RESET_ALL)
+            time.sleep(2) 
             if args.save:
                with open(args.save, 'a') as file :
                    file.write(i+'\n') 
@@ -58,8 +60,10 @@ def main(title,num,save):
  except requests.exceptions.ReadTimeout:
 
    print(Fore.GREEN +Style.BRIGHT +'Resend Problem Connexion'+ Style.RESET_ALL)
-
-
+ except requests.exceptions.ConnectionError:
+   print(Fore.GREEN +Style.BRIGHT +'No data connexion'+ Style.RESET_ALL)
+ 
+ 
   
 if __name__=='__main__':
 
@@ -68,4 +72,7 @@ if __name__=='__main__':
        parser.add_argument("-num", "--num", dest="num", help="nomber of results", required=True)     
        parser.add_argument("-save", "--save", dest="save", help="save", required=False)  
        args = parser.parse_args()
-       main(args.title, args.num, args.save)
+
+       thread = threading.Thread(target=main, args=(args.title,args.num, args.save)) 
+       thread.start()
+       thread.join(timeout=2)
