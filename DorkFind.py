@@ -16,7 +16,7 @@ def arparse():
 /_____/\____/_/  /_/|_/_/   /_/_/ /_/\__,_/   
                                  v.0.1            
                                  Author :Jhonson
-                                 Email : wannaajhonson@gmail.com
+                                 
     '''
 
     print(Fore.GREEN + Style.BRIGHT +banner+ Style.RESET_ALL)
