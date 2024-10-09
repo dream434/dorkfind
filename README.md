@@ -15,7 +15,7 @@
 
 <code>apt install git</code>
 
-<code>git clonehttps://github.com/Jhonsonwannaa/dorkfind  </code>
+<code>git clonehttps://github.com/dream434/dorkfind  </code>
 
 <code>apt install python</code>
 
