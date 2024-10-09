@@ -53,9 +53,6 @@ options:
 
 
 
-<img src="https://i.postimg.cc/FzbWBX6n/dorkfind.png" alt="Image description" width="470" height="290">
-
-
 # Features 💬
 
 
